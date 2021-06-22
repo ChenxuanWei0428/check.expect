@@ -52,7 +52,7 @@ def expect(f, o, *i):
 
 
 
-# Purpose: within(f, ran, o, *i) Output a message if the function output
+# Purpose: within(f, o, ran, *i) Output a message if the function output
 #          is not within the error range the expected output and return false
 # Contract: func, any, any, float -> bool
 # effect: Produce Outputs
