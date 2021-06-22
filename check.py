@@ -38,7 +38,7 @@ def _run_time_d(func):
 # Contract: func, any, any -> bool
 # Time: O(1)
 @_run_time_d
-def expect(f, i, o):
+def expect(f, o, *i):
     if f(i) != o :
         print("Test failed!")
         sb = "Argument: {argument}"
@@ -58,7 +58,7 @@ def expect(f, i, o):
 # effect: Produce Outputs
 # Time: O(1)
 @_run_time_d
-def within(f, i, o, ran):
+def within(f, o, ran, *i):
     if (abs(f(i) - o) > ran):
         print("Test failed!")
         sb = "Argument: {argument}"
@@ -76,6 +76,5 @@ def within(f, i, o, ran):
 # effect:Produce Outputs
 # time: O(1)
 @_run_time_d
-def run_time(f, i):
+def run_time(f, i*):
     pass
-    
